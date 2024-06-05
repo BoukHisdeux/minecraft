@@ -23,7 +23,7 @@ end
 function DigUpModerne()
   -- La tortue creuse devant elle (si sable ou gravier recommence)
   while turtle.detectUp() do
-    turtle.digUpModerne()
+    turtle.digUp()
     os.sleep(.5)
   end
 end
