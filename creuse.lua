@@ -59,7 +59,7 @@ for descente=rPremier, rDernier do
     turtle.foward()
   end
 
-  for i=1 to rDernier-descente do
+  for i=1,rDernier-descente do
     digDownModerne()
       turtle.down()
       digDownModerne()
@@ -73,7 +73,7 @@ for descente=rPremier, rDernier do
 
 --  Minage()
 
-  for i=1 to rDernier-descente do
+  for i=1,rDernier-descente do
     turtle.up()
   end
 
