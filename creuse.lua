@@ -53,7 +53,7 @@ function Minage()
   turtle.turnLeft()
 end
 
-for descente=rPremier to rDernier do
+for descente=rPremier, rDernier do
   turtle.select(1)
   for j=1,longueur do
     turtle.foward()
