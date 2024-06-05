@@ -4,7 +4,7 @@ longueur = 64   -- longueur de minage
 rPremier = 0
 rDernier = 3
 
-function DigModerne()
+function digModerne()
   -- La tortue creuse devant elle (si sable ou gravier recommence)
   while turtle.detect() do
     turtle.dig()
@@ -12,7 +12,7 @@ function DigModerne()
   end
 end
 
-function DigDownModerne()
+function digDownModerne()
   -- La tortue creuse devant elle (si sable ou gravier recommence)
   while turtle.detectDown() do
     turtle.digDown()
@@ -20,7 +20,7 @@ function DigDownModerne()
   end
 end
 
-function DigUpModerne()
+function digUpModerne()
   -- La tortue creuse devant elle (si sable ou gravier recommence)
   while turtle.detectUp() do
     turtle.digUp()
