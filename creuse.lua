@@ -29,16 +29,16 @@ function digUpModerne()
 end
 
 function Minage()
-    digDownModerne
+    turtle.digDown()
       turtle.down()
-      digDownModerne
+      turtle.digDown()
       turtle.down()
   for i=1,deplacement do
-    digUpModerne
-      digDownModerne
+    turtle.digUp()
+      turtle.digDown()
     for j=1,longueur do
       digUpModerne
-        digDownModerne
+        turtle.digDown()
         digModerne
       turtle.forward()
     end
