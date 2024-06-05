@@ -79,7 +79,7 @@ for descente=rPremier, rDernier do
   end
 
   while not turtle.detectUp() do
-    turtle.Up()
+    turtle.up()
   end
 
   for i=1,16 do
