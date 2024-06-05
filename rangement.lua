@@ -1,6 +1,6 @@
 -- Programme pour turtle de mise en bloc des blocs de Cobblestone
 
-local int r{}
+local r{}
 r[1]=4
 r[2]=8
 r[3]=12
