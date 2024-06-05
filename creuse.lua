@@ -55,7 +55,7 @@ end
 
 for descente=rPremier, rDernier do
   turtle.select(1)
-  for j=1,deplacement do
+  for i=1,deplacement do
     turtle.forward()
   end
 
@@ -71,7 +71,7 @@ for descente=rPremier, rDernier do
 
   turtle.turnRight()
 
---  Minage()
+  Minage()
 
   turtle.turnLeft()
   for i=1,deplacement do
