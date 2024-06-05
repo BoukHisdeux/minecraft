@@ -1,6 +1,6 @@
 decallage = 12 
 deplacement = 2 -- largeur de minage
-longueur = 64
+longueur = 64   -- longueur de minage 
 rPremier = 0
 rDernier = 3
 
@@ -29,24 +29,24 @@ function DigUpModerne()
 end
 
 function Minage()
-  turtle.digDown()
-    turtle.down()
-    turtle.digDown()
-    turtle.down()
+    digDownModerne
+      turtle.down()
+      digDownModerne
+      turtle.down()
   for i=1,deplacement do
-    turtle.digUpModerne
-      turtle.digDownModerne
+    digUpModerne
+      digDownModerne
     for j=1,longueur do
-      turtle.digUpModerne
-        turtle.digDownModerne
-        turtle.digModerne
+      digUpModerne
+        digDownModerne
+        digModerne
       turtle.forward()
     end
     for j=1,longueur do
       turtle.back()
     end
     turtle.turnLeft()
-      turtle.digModerne
+      digModerne
         turtle.forward()
         turtle.turnRight()
   end
@@ -56,4 +56,3 @@ function Minage()
   end
   turtle.turnLeft()
 end
-
