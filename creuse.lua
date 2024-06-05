@@ -29,24 +29,24 @@ function digUpModerne()
 end
 
 function Minage()
-    turtle.digDown()
+    digDownModerne()
       turtle.down()
-      turtle.digDown()
+      digDownModerne()
       turtle.down()
   for i=1,deplacement do
-    turtle.digUp()
-      turtle.digDown()
+    digUpModerne()
+      digDownModerne()
     for j=1,longueur do
-      turtle.digUp()
-        turtle.digDown()
-        digModerne
+      digUpModerne()
+        digDownModerne()
+        digModerne()
       turtle.forward()
     end
     for j=1,longueur do
       turtle.back()
     end
     turtle.turnLeft()
-      digModerne
+      digModerne()
         turtle.forward()
         turtle.turnRight()
   end
