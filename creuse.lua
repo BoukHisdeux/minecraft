@@ -1,5 +1,5 @@
--- version 0.1
-decallage = 12 
+-- version 0.2
+decallage = 4 -- 12 
 deplacement = 2 -- largeur de minage
 longueur = 8 -- 64   -- longueur de minage 
 rPremier = 0
