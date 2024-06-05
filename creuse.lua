@@ -73,7 +73,7 @@ for descente=rPremier, rDernier do
 
   Minage()
 
-  turtle.turnLeft()
+  turtle.turnRight()
   for i=1,deplacement do
     turtle.back()
   end
