@@ -1,3 +1,4 @@
+-- version 0.1
 decallage = 12 
 deplacement = 2 -- largeur de minage
 longueur = 8 -- 64   -- longueur de minage 
@@ -73,7 +74,8 @@ for descente=rPremier, rDernier do
 
   Minage()
 
-  turtle.turnRight()
+  turtle.turnLeft()
+  
   for i=1,decallage do
     turtle.back()
   end
