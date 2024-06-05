@@ -37,7 +37,7 @@ function Minage()
     turtle.digUp()
       turtle.digDown()
     for j=1,longueur do
-      digUpModerne
+      turtle.digUp()
         turtle.digDown()
         digModerne
       turtle.forward()
