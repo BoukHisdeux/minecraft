@@ -28,42 +28,48 @@ end
 if Compter == 0 then
   continuer = true
   while continuer == true do
-    for i=1,9 do 
-      turtle.select(t[i])
-      turtle.suckUp(1)
-    end
-    turtle.select(1)
-    turtle.craft()
-    turtle.dropDown()
+    turtle.suckUp()
+    quantite = math.floor(turtle.getItemCount() / 9)
+    if quantite == 0 then 
+      turtle.DropUp()
+    else
+      turtle.DropUp()
+      for i=1,9 do 
+        turtle.select(t[i])
+        turtle.suckUp(quantite)
+      end
+      turtle.select(1)
+      turtle.craft()
+      turtle.dropDown()
     
-    j = 1
-    continuerj = true
-    while continuerj == true do
-      turtle.select(j)
-      turtle.suckDown()
-      if turtle.getItemCount() > 9 then
-        quantite = math.floor(turtle.getItemCount() / 9)
-        for k=j,1,-1 do 
-          turtle.select(k)
+      j = 1
+      continuerj = true
+      while continuerj == true do
+        turtle.select(j)
+        turtle.suckDown()
+        if turtle.getItemCount() > 9 then
+          quantite = math.floor(turtle.getItemCount() / 9)
+          for k=j,1,-1 do 
+            turtle.select(k)
+            turtle.dropDown()
+          end
+          for i=1,9 do 
+            turtle.select(t[i])
+            turtle.suckDown(quantite)
+          end
+          turtle.select(1)
+          turtle.craft()
           turtle.dropDown()
         end
-        for i=1,9 do 
-          turtle.select(t[i])
-          turtle.suckDown(quantite)
+        j = j + 1
+        if turtle.getItemCount() == 0 then 
+          continuerj = false 
         end
-        turtle.select(1)
-        turtle.craft()
+      end
+      for i=1,9 do 
+        turtle.select(t[i])
         turtle.dropDown()
       end
-      j = j + 1
-      if turtle.getItemCount() == 0 then 
-        continuerj = false 
-      end
-    end
-    for i=1,9 do 
-      turtle.select(t[i])
-      turtle.dropDown()
     end
   end
-
 end 
