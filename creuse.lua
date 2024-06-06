@@ -1,9 +1,7 @@
 -- version 0.2
-decallage = 4 -- 12 
-deplacement = 2 -- lar-- version 1.0
-decallage = 6 -- 12 
+decallage = 12 
 deplacement = 2 -- largeur de minage
-longueur = 8 -- 64   -- longueur de minage 
+longueur = 64   -- longueur de minage 
 rPremier = 0
 rDernier = 3
 
