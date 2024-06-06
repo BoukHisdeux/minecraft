@@ -1,5 +1,5 @@
 -- Programme pour turtle de mise en bloc des blocs de Cobblestone
--- version 1.0.2
+-- version 1.0.3
 
 r = {}
     r[1] = 4
@@ -64,7 +64,7 @@ if Compter == 0 then
           continuerj = false 
         end
       end
-      for i=1,9 do 
+      for i=1,16 do 
         turtle.select(t[i])
         turtle.dropDown()
       end
