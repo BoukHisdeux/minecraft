@@ -65,7 +65,7 @@ if Compter == 0 then
         end
       end
       for i=1,16 do 
-        turtle.select(t[i])
+        turtle.select(i)
         turtle.dropDown()
       end
     end
