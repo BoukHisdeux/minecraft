@@ -30,10 +30,8 @@ if Compter == 0 then
   while continuer == true do
     turtle.suckUp()
     quantite = math.floor(turtle.getItemCount() / 9)
-    if quantite == 0 then 
-      turtle.DropUp()
-    else
-      turtle.DropUp()
+    turtle.DropUp()
+    if quantite ~= 0 then 
       for i=1,9 do 
         turtle.select(t[i])
         turtle.suckUp(quantite)
