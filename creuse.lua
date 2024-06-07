@@ -1,5 +1,5 @@
--- version 0.2
-decallage = 12 
+-- version 0.2.1
+decallage = 26
 deplacement = 2 -- largeur de minage
 longueur = 64   -- longueur de minage 
 rPremier = 0
@@ -37,7 +37,10 @@ function Minage()
       digUpModerne()
       digDownModerne()
       digModerne()
-      turtle.forward()
+      while not turtle.forward() do
+        os.sleep(.5)
+        turtle.dig()
+      end
     end
 
     digUpModerne()
